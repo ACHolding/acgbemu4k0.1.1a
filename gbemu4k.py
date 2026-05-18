@@ -154,6 +154,7 @@ class ACGBEmu:
             window="SDL2",
             window_title=APP_TITLE
         )
+        pyboy.set_emulation_speed(1)  # real-time (~60 fps)
 
         while pyboy.tick():
             pass
